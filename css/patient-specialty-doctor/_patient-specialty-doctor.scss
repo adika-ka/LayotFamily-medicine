@@ -1,0 +1,486 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    
+    }
+    a{
+        text-decoration: none;
+    }
+    .wrapper{
+        background-color: white;
+    }
+
+    .container {
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 0 100px;   
+    }
+    .patient-specialty-doctor__title {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 44px;
+        color: #1F2428;
+        margin-bottom: 40px;   
+    }
+    .patient-specialty-doctor__selection {
+        margin-bottom: 50px;
+    }
+    .selection__row {
+        display: flex;
+        align-items: center;
+        
+        justify-content: space-between;
+        & select{
+            background: #FFFFFF;
+            border: 1px solid #C0C9D7;
+            box-sizing: border-box;
+            border-radius: 8px;
+            width: 240px;
+            height: 60px;
+            padding: 21px 0 21px 19px;
+        }
+    }
+    .selection__online {
+        display: flex;
+        & div{
+            width: 160px;
+            padding: 19px 0;
+            text-align: center;
+        }
+    }
+    .online {
+        background: #00C879;
+        border: 1px solid #00C879;
+        box-sizing: border-box;
+        border-radius: 8px 0px 0px 8px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    .home-visit {
+            background: #FFFFFF;
+            border: 1px solid #C0C9D7;
+            box-sizing: border-box;
+            border-radius: 0px 8px 8px 0px;
+    }
+    .name {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #1F2428;
+    }
+    .selection__speciality, .selection__sort, .selection__data  {
+        display: flex;
+        align-items: center;
+        & select{
+            appearance: none;
+        }
+            & .select{
+                background: url(/img/icons/arrow.svg) right no-repeat;
+                background-position-x: calc(100% - 18px);
+            }
+    }
+    .speciality {
+        margin-right: 20px;
+    }
+    .select {
+    }
+    .selection__sort {
+    }
+    .sort {
+        margin-right: 20px;
+    }
+    .selection__data {
+        margin-right: 0;
+    }
+    .data {
+        margin-right: 20px;
+    }
+    .patient-specialty-doctor__items {
+        margin-bottom: 22px;
+    }
+    .patient-specialty-doctor__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .patient-specialty-doctor__item {
+        flex: 0 0 48%;
+        border: 1px solid #C0C9D7;
+        box-sizing: border-box;
+        border-radius: 6px;
+        padding: 22px 32px 37px 21px;
+        margin: 0 30px 30px 0;
+    }
+    .item__row {
+        display: flex;
+    }
+    .item__photo {
+        margin-right: 28px;
+    }
+    .photo__row {
+    }
+    .photo__img {
+        margin-bottom: 14px;
+    }
+    .photo__rating {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .reviews {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #222222;
+        opacity: 0.6;
+    }
+    .item__name {
+        margin-right: 44px;
+    }
+    .name__spec {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 28px;
+        color: #1F2428;
+        margin-bottom: -2px;   
+    }
+    .name__nominal {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        color: #1F2428;
+        margin-bottom: 11px;
+    }
+    .sum__row {
+        display: flex;
+    }
+    .sum__left {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F2428;
+        margin-right: 12px;
+    }
+    .sum__right {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F2428;
+    }
+    .time__title {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 28px;
+        color: #1F2428;
+        margin-bottom: 12px;
+    }
+    .time__day-of-week {
+        margin-bottom: 10px;
+    }
+    .time-day-of-week__row {
+        display: flex;
+    }
+    .day-of-week--active {
+        background: #00C879;
+        border: 0.811912px solid #00C879;
+        box-sizing: border-box;
+        border-radius: 6px 0px 0px 6px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 16px 0;
+        flex: 0 0 33%;
+    }
+    .day-of-week {
+        background: #FFFFFF;
+        border: 0.811912px solid #C0C9D7;
+        box-sizing: border-box;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        color: #1F2428;
+        opacity: 0.6;
+        padding: 16px 0;
+        flex: 0 0 33%;
+    }
+    .day-of-week--actives{
+        background: #FFFFFF;
+        border: 0.811912px solid #C0C9D7;
+        box-sizing: border-box;
+        border-radius: 0px 6px 6px 0px;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        color: #1F2428;
+        opacity: 0.6;
+        padding: 16px 0;
+        flex: 0 0 33%;
+    }
+    .time__table {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+    }
+    .table__line{
+        display: flex;
+    }
+    .table__item {
+        width: 89px;
+        margin-right: 6px;
+        margin-bottom: 6px;
+        background: #438ACA;
+        border-radius: 6px; 
+        padding: 16px 0;
+        text-align: center;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .patient-specialty-doctor__pages {
+        max-width: 390px;
+        margin: 0 auto 150px auto;
+    }
+    .patient-specialty-doctor__pages__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & a{
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.1em;
+            color: #1F2428;
+        }
+        a.active{
+            color: #00C879;
+        }
+    }
+    .arrow__left{
+        position: absolute;
+        display:block;
+        width: 9px;
+        height: 9px;
+        position: relative;
+        border-bottom: 1px solid #1F2428;
+        border-left: 1px solid #1F2428;
+        transform: rotate(45deg);
+        margin-right: 37px;
+    }
+    .arrow__right{
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        position: relative;
+        border-top: 1px solid #1F2428;
+        border-right: 1px solid #1F2428;
+        transform: rotate(45deg);
+        margin-left: 33px;
+    }
+    .active {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        text-align: center;
+        border: 1px solid #00C879;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    @media (min-width: 1315px) and (max-width: 1850px) {
+        .selection__row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .selection__online {
+            flex: 0 0 99%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            & div{
+                width: 460px;
+            }
+        }
+        .patient-specialty-doctor__row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .patient-specialty-doctor__item {
+            flex: 0 0 60%;
+        }
+    }
+    @media (min-width: 500px) and (max-width: 1315px) {
+        .container {
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+        .selection__row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .patient-specialty-doctor__row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .patient-specialty-doctor__item {
+            flex: 0 0 75%;
+        }
+        .patient-specialty-doctor__title {
+            text-align: center;
+        }
+        .selection__online {
+            flex: 0 0 99%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            & div{
+                width: 160px;
+            }
+        }
+        .selection__speciality, .selection__sort, .selection__data  {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 99%;
+            margin-bottom: 20px;
+        }
+        .speciality {
+            margin-right: 1px;
+            text-align: center;
+        }
+        .sort {
+            margin-right: 6px;
+            text-align: center;
+        }
+        .selection__data {
+            margin-right: 0;
+        }
+        .data {
+            margin-right: 16px;
+            text-align: center;
+        }
+        .patient-specialty-doctor__items {
+            margin-bottom: 22px;
+        }
+        .patient-specialty-doctor__row {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .patient-specialty-doctor__item {
+            flex: 0 0 24%;
+            border: 1px solid #C0C9D7;
+            box-sizing: border-box;
+            border-radius: 6px;
+            padding: 22px 32px 37px 21px;
+            margin: 0 30px 30px 0;
+        }
+        .item__row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    @media (min-width: 300px) and (max-width: 500px) {
+        .container {
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+        .selection__row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .patient-specialty-doctor__row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .patient-specialty-doctor__item {
+            flex: 0 0 75%;
+        }
+        .patient-specialty-doctor__title {
+            text-align: center;
+        }
+        .selection__online {
+            flex: 0 0 99%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            & div{
+                width: 160px;
+            }
+        }
+        .selection__speciality, .selection__sort, .selection__data  {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 99%;
+            margin-bottom: 20px;
+        }
+        .speciality {
+            margin-right: 1px;
+            text-align: center;
+        }
+        .sort {
+            margin-right: 6px;
+            text-align: center;
+        }
+        .selection__data {
+            margin-right: 0;
+        }
+        .data {
+            margin-right: 16px;
+            text-align: center;
+        }
+        .patient-specialty-doctor__items {
+            margin-bottom: 22px;
+        }
+        .patient-specialty-doctor__row {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .patient-specialty-doctor__item {
+            flex: 0 0 24%;
+            border: 1px solid #C0C9D7;
+            box-sizing: border-box;
+            border-radius: 6px;
+            padding: 22px 32px 37px 21px;
+            margin: 0 30px 30px 0;
+        }
+        .item__row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .table__line{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .wrapper {
+
+    }

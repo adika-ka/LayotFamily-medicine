@@ -1,0 +1,144 @@
+
+.header {
+    height: 100px;
+}
+.header__row {
+    display: flex;
+}
+.header__logo {
+    padding: 13px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin-right: 75px;
+}
+.header-logo__img{
+    margin-right: 15px;
+}
+.header-logo__content {
+    & p:nth-child(1){
+        font-weight: bold;
+        font-size: 14.4828px;
+        line-height: 13px;
+        color: #266192;
+    }
+    & p:nth-child(2){
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 16px;
+        color: #255A8B;
+    }
+    &::before{
+        content: "";
+    }
+}
+.header__menu {
+    margin-right: 99px;
+}
+.header-menu__row {
+    display: flex;
+    padding: 40px 0;
+}
+.header-menu__link {
+    & a{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
+    color: #1F2428;
+    margin-right: 60px;
+    }
+    & a:last-child{
+        margin-right: 0;
+    }
+}
+.header-user__btn {
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    padding: 16px;
+    margin: 26px 27px 0 0;
+}
+.btn {
+    background: #00C879;
+    box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
+    border-radius: 36px;
+}
+.user-btn__link {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.header__user {
+    padding: 36px 0;
+}
+.header-user__come {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    & a{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 16px;  
+        color: #1F2428;
+    }
+}
+.header-user-come__image{
+    display: inline-block;
+    margin-right: 13px;
+}
+@media (min-width: 300px) and (max-width: 900px) {
+    .container{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .header {
+        height: 250px;
+    }
+    .header__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__logo {
+        margin: 0 5px -25px 0;
+
+    }
+    .header__menu {
+        margin: 0px 0 -25px 0 ;
+    }
+    .header-menu__link {
+        & a{
+        margin-right: 10px;
+        }
+    }
+    .header-user__btn {
+        margin-right: 7px;
+        margin: 0px 0 -25px;
+    }
+    
+    .footer__text{
+    width: 300px;
+    }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+    .container{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .header__logo {
+        margin-right: 15px;
+    }
+    .header__menu {
+        margin-right: 19px;
+    }
+    .header-menu__link {
+        & a{
+        margin-right: 10px;
+        }
+    }
+    .header-user__btn {
+        margin-right: 17px;
+    }
+}

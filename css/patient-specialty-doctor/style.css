@@ -1,0 +1,1408 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Gilroy";
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+.content {
+  min-height: calc(100vh - 100px);
+}
+
+.header {
+  height: 100px;
+  padding: 0 100px;
+  margin-bottom: 60px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+.header__row {
+  max-width: 1720px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo {
+  padding: 13px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 133px;
+}
+
+.header-logo__img {
+  margin-right: 15px;
+}
+
+.header-logo__content p:nth-child(1) {
+  font-weight: bold;
+  font-size: 14.4828px;
+  line-height: 13px;
+  color: #266192;
+}
+
+.header-logo__content p:nth-child(2) {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  color: #255A8B;
+}
+
+.header-logo__content::before {
+  content: "";
+}
+
+.header__menu {
+  margin-right: 338px;
+}
+
+.header-menu__row {
+  padding: 42px 0;
+}
+
+.header-menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-menu__link a:last-child {
+  margin-right: 0;
+}
+
+.menu__rigt {
+  margin-right: 60px;
+}
+
+.header-menu__item {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 16px;
+  color: #1F2428;
+  margin-right: 60px;
+}
+
+.header-menu__item:hover {
+  color: #00C879;
+}
+
+.header-menu__item--active {
+  margin-right: 60px;
+  color: #00C879;
+}
+
+.header__money {
+  margin-right: 46px;
+}
+
+.money__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 23px 0 21px;
+}
+
+.money__sum {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1F2428;
+  margin-bottom: 2px;
+}
+
+.money__sum span {
+  color: #438ACA;
+}
+
+.money__story {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #00C879;
+  margin-bottom: 6px;
+  border-bottom: 1px dashed #00C879;
+}
+
+.requisites {
+  width: 64px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #00C879;
+  border-bottom: 1px dashed #00C879;
+}
+
+.header__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-profile__image {
+  padding: 21px 0;
+  margin-right: 17px;
+}
+
+.header-profile__name {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  color: #1F2428;
+  border-bottom: 1px dashed #1F2428;
+  margin-right: 56px;
+}
+
+.header-profile__login {
+  max-width: 28px;
+  width: 100%;
+}
+
+@media (min-width: 1605px) and (max-width: 1945px) {
+  .header {
+    height: 100px;
+    padding: 0 50px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .header__logo {
+    margin-right: 70px;
+  }
+  .header__menu {
+    margin-right: 170px;
+  }
+  .header__money {
+    margin-right: 46px;
+  }
+  .header-profile__name {
+    margin-right: 56px;
+  }
+}
+
+@media (min-width: 1228px) and (max-width: 1605px) {
+  .header {
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .header__row {
+    max-width: 1228px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__logo {
+    margin-right: 30px;
+  }
+  .header__menu {
+    margin-right: 80px;
+  }
+  .menu__rigt {
+    margin-right: 20px;
+  }
+  .header-menu__item {
+    margin-right: 20px;
+  }
+  .header-menu__item--active {
+    margin-right: 20px;
+  }
+  .header__money {
+    margin-right: 20px;
+  }
+  .header-profile__name {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 980px) and (max-width: 1227px) {
+  .header {
+    height: 120px;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .header__row {
+    max-width: 980px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__logo {
+    padding: 13px 0 20px 0;
+    margin-right: 10px;
+  }
+  .header-logo__img {
+    margin-right: 15px;
+  }
+  .header__menu {
+    margin-right: 0px;
+  }
+  .header-menu__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 42px 0;
+  }
+  .header-menu__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-menu__link a:last-child {
+    margin-bottom: 0;
+  }
+  .menu__rigt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0px;
+  }
+  .menu__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0px;
+  }
+  .header-menu__item {
+    margin-bottom: 10px;
+  }
+  .header-menu__item--active {
+    margin-bottom: 10px;
+  }
+  .header__money {
+    margin-right: 20px;
+  }
+  .money__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 23px 0 21px;
+  }
+  .requisites {
+    width: 64px;
+  }
+  .header__profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-profile__image {
+    padding: 21px 0;
+    margin-right: 17px;
+  }
+  .header-profile__name {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    color: #1F2428;
+    border-bottom: 1px dashed #1F2428;
+    margin-right: 20px;
+  }
+  .header-profile__login img {
+    max-width: 40px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 980px) {
+  .header {
+    height: 220px;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .header__row {
+    max-width: 550px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-right: 10px;
+  }
+  .header-logo__img {
+    margin-right: 15px;
+  }
+  .header__menu {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 99%;
+            flex: 0 0 99%;
+    margin-right: 0px;
+  }
+  .header-menu__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 42px 0;
+  }
+  .header-menu__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 99%;
+            flex: 0 0 99%;
+  }
+  .header-menu__link a:last-child {
+    margin-bottom: 0;
+  }
+  .menu__rigt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0px;
+  }
+  .menu__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0px;
+  }
+  .header-menu__item {
+    margin-bottom: 10px;
+  }
+  .header-menu__item--active {
+    margin-bottom: 8px;
+  }
+  .header__money {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-right: 10px;
+    width: 90px;
+  }
+  .money__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .money__sum {
+    margin-bottom: 10px;
+  }
+  .money__story {
+    width: 128px;
+    margin-bottom: 10px;
+  }
+  .requisites {
+    width: 64px;
+  }
+  .header__profile {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-profile__image {
+    margin-right: 10px;
+  }
+  .header-profile__name {
+    width: 50px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 550px) {
+  .header {
+    height: 350px;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .header__row {
+    max-width: 365px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-right: 10px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 99%;
+            flex: 0 0 99%;
+  }
+  .header-logo__img {
+    margin-right: 15px;
+  }
+  .header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    margin-right: 0px;
+  }
+  .header-menu__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-menu__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-menu__link a:last-child {
+    margin-bottom: 0;
+  }
+  .menu__rigt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: -10px;
+  }
+  .menu__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: -50px;
+  }
+  .header-menu__item {
+    margin-bottom: 10px;
+  }
+  .header-menu__item--active {
+    margin-bottom: 8px;
+  }
+  .header__money {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-right: 10px;
+    width: 90px;
+  }
+  .money__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .money__sum {
+    margin-bottom: 10px;
+  }
+  .money__story {
+    width: 128px;
+    margin-bottom: 10px;
+  }
+  .requisites {
+    width: 64px;
+  }
+  .header__profile {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-profile__image {
+    margin-right: 10px;
+  }
+  .header-profile__name {
+    width: 50px;
+    margin-right: 10px;
+  }
+}
+
+.footer {
+  background: url(/img/lines2.png) 0 0/cover no-repeat;
+  background-color: #438ACA;
+}
+
+.footer__row {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .footer__text {
+    max-width: 330px;
+    margin: 0 auto;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  background-color: white;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.patient-specialty-doctor__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 44px;
+  color: #1F2428;
+  margin-bottom: 40px;
+}
+
+.patient-specialty-doctor__selection {
+  margin-bottom: 50px;
+}
+
+.selection__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.selection__row select {
+  background: #FFFFFF;
+  border: 1px solid #C0C9D7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  width: 240px;
+  height: 60px;
+  padding: 21px 0 21px 19px;
+}
+
+.selection__online {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.selection__online div {
+  width: 160px;
+  padding: 19px 0;
+  text-align: center;
+}
+
+.online {
+  background: #00C879;
+  border: 1px solid #00C879;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px 0px 0px 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.home-visit {
+  background: #FFFFFF;
+  border: 1px solid #C0C9D7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #1F2428;
+}
+
+.selection__speciality, .selection__sort, .selection__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selection__speciality select, .selection__sort select, .selection__data select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.selection__speciality .select, .selection__sort .select, .selection__data .select {
+  background: url(/img/icons/arrow.svg) right no-repeat;
+  background-position-x: calc(100% - 18px);
+}
+
+.speciality {
+  margin-right: 20px;
+}
+
+.sort {
+  margin-right: 20px;
+}
+
+.selection__data {
+  margin-right: 0;
+}
+
+.data {
+  margin-right: 20px;
+}
+
+.patient-specialty-doctor__items {
+  margin-bottom: 22px;
+}
+
+.patient-specialty-doctor__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.patient-specialty-doctor__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  border: 1px solid #C0C9D7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  padding: 22px 32px 37px 21px;
+  margin: 0 30px 30px 0;
+}
+
+.item__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item__photo {
+  margin-right: 28px;
+}
+
+.photo__img {
+  margin-bottom: 14px;
+}
+
+.photo__rating {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.reviews {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #222222;
+  opacity: 0.6;
+}
+
+.item__name {
+  margin-right: 44px;
+}
+
+.name__spec {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  color: #1F2428;
+  margin-bottom: -2px;
+}
+
+.name__nominal {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1F2428;
+  margin-bottom: 11px;
+}
+
+.sum__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sum__left {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1F2428;
+  margin-right: 12px;
+}
+
+.sum__right {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1F2428;
+}
+
+.time__title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  color: #1F2428;
+  margin-bottom: 12px;
+}
+
+.time__day-of-week {
+  margin-bottom: 10px;
+}
+
+.time-day-of-week__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.day-of-week--active {
+  background: #00C879;
+  border: 0.811912px solid #00C879;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px 0px 0px 6px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 16px 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+}
+
+.day-of-week {
+  background: #FFFFFF;
+  border: 0.811912px solid #C0C9D7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #1F2428;
+  opacity: 0.6;
+  padding: 16px 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+}
+
+.day-of-week--actives {
+  background: #FFFFFF;
+  border: 0.811912px solid #C0C9D7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px 6px 6px 0px;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #1F2428;
+  opacity: 0.6;
+  padding: 16px 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+}
+
+.time__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.table__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table__item {
+  width: 89px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  background: #438ACA;
+  border-radius: 6px;
+  padding: 16px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.patient-specialty-doctor__pages {
+  max-width: 390px;
+  margin: 0 auto 150px auto;
+}
+
+.patient-specialty-doctor__pages__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.patient-specialty-doctor__pages__row a {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #1F2428;
+}
+
+.patient-specialty-doctor__pages__row a.active {
+  color: #00C879;
+}
+
+.arrow__left {
+  position: absolute;
+  display: block;
+  width: 9px;
+  height: 9px;
+  position: relative;
+  border-bottom: 1px solid #1F2428;
+  border-left: 1px solid #1F2428;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-right: 37px;
+}
+
+.arrow__right {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  position: relative;
+  border-top: 1px solid #1F2428;
+  border-right: 1px solid #1F2428;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: 33px;
+}
+
+.active {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  border: 1px solid #00C879;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+@media (min-width: 1315px) and (max-width: 1850px) {
+  .selection__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .selection__online {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 99%;
+            flex: 0 0 99%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .selection__online div {
+    width: 460px;
+  }
+  .patient-specialty-doctor__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .patient-specialty-doctor__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1315px) {
+  .container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .selection__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .patient-specialty-doctor__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .patient-specialty-doctor__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+  }
+  .patient-specialty-doctor__title {
+    text-align: center;
+  }
+  .selection__online {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 99%;
+            flex: 0 0 99%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .selection__online div {
+    width: 160px;
+  }
+  .selection__speciality, .selection__sort, .selection__data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 99%;
+            flex: 0 0 99%;
+    margin-bottom: 20px;
+  }
+  .speciality {
+    margin-right: 1px;
+    text-align: center;
+  }
+  .sort {
+    margin-right: 6px;
+    text-align: center;
+  }
+  .selection__data {
+    margin-right: 0;
+  }
+  .data {
+    margin-right: 16px;
+    text-align: center;
+  }
+  .patient-specialty-doctor__items {
+    margin-bottom: 22px;
+  }
+  .patient-specialty-doctor__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .patient-specialty-doctor__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 24%;
+            flex: 0 0 24%;
+    border: 1px solid #C0C9D7;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 6px;
+    padding: 22px 32px 37px 21px;
+    margin: 0 30px 30px 0;
+  }
+  .item__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .selection__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .patient-specialty-doctor__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .patient-specialty-doctor__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+  }
+  .patient-specialty-doctor__title {
+    text-align: center;
+  }
+  .selection__online {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 99%;
+            flex: 0 0 99%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .selection__online div {
+    width: 160px;
+  }
+  .selection__speciality, .selection__sort, .selection__data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 99%;
+            flex: 0 0 99%;
+    margin-bottom: 20px;
+  }
+  .speciality {
+    margin-right: 1px;
+    text-align: center;
+  }
+  .sort {
+    margin-right: 6px;
+    text-align: center;
+  }
+  .selection__data {
+    margin-right: 0;
+  }
+  .data {
+    margin-right: 16px;
+    text-align: center;
+  }
+  .patient-specialty-doctor__items {
+    margin-bottom: 22px;
+  }
+  .patient-specialty-doctor__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .patient-specialty-doctor__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 24%;
+            flex: 0 0 24%;
+    border: 1px solid #C0C9D7;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 6px;
+    padding: 22px 32px 37px 21px;
+    margin: 0 30px 30px 0;
+  }
+  .item__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .table__line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,153 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    }
+    a{
+      text-decoration: none;
+    }
+    .wrapper {
+    }
+    .header{
+      background: #FFFFFF;
+      margin-bottom: 60px;
+    }
+    .content {
+    }
+    .balance {
+    }
+    .container {
+      max-width: 1920px;
+      margin: 0 auto;
+      padding: 0 0px 0 0px;
+    }
+    .balance__title {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 44px;
+      color: #1F2428;
+      margin-bottom: 6px;
+    }
+    .sum {
+      color: #00C879;
+    }
+    .balance__subtitle {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 36px;
+      color: #1F2428;
+      margin-bottom: 6px;
+    }
+    .balance__method {
+      font-size: 18px;
+      line-height: 36px;
+      color: #1F2428;
+      margin-bottom: 6px;
+    }
+    .balance__banks {
+      margin-bottom: 22px;
+        & a{
+          margin-right: 10px;
+        }
+    }
+    .check{
+      // position: absolute;
+
+      // z-index: 2;
+      // background: url(/img/icons/галочка.png) no-repeat right;
+      & img{
+        margin: 0 -12px 0 -0px;
+      }
+    }
+    .balance__number, .balance__sum {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 36px;
+      color: #1F2428;
+      margin-bottom: 10px;
+    }
+    .balance__card{
+      & input{
+        width: 400px;
+        height: 60px;
+        padding: 22px 0 22px 20px;
+        background: #FCFDFF;
+        border: 1px solid #C0C9D7;
+        box-sizing: border-box;
+        border-radius: 6px;
+      }
+      & input.number__data, .number__cvv{
+        width: 120px;
+        height: 60px;
+        padding: 22px 0 22px 20px;
+        background: #FCFDFF;
+        border: 1px solid #C0C9D7;
+        box-sizing: border-box;
+        border-radius: 6px;
+      }
+    }
+    .number__card {
+      margin-bottom: 19px;
+      margin-right: 20px;
+    }
+    .number__data{
+    margin-right: 20px;
+    }
+    .balance__summa{
+      margin-bottom: 30px;
+    }
+    .btn__text {
+    }
+    .btn{
+      width: 200px;
+      padding: 19px 0;
+      text-align: center;
+      margin-bottom: 261px;
+      margin-bottom: 25px;
+      background: #00C879;
+      // box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
+      border-radius: 36px;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 18px;
+      color: #FFFFFF;
+      border: solid 1px #00C879;
+  }
+  .rules{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1F2428;
+    margin-bottom: 135px;
+    & a{
+      color: #00C879;
+    }
+  }
+    @media (min-width: 300px) and (max-width: 2000px) {
+      .content {
+        padding: 0 100px;
+    }
+  }
+  @media (min-width: 300px) and (max-width: 900px) {
+    .content {
+      padding: 0 15px;
+  }
+}
+@media (min-width: 300px) and (max-width: 650px) {
+  .content {
+    padding: 0 10px;
+}
+.balance__card{
+  & input{
+    width: 350px;
+    height: 60px;
+    padding: 22px 0 22px 20px;
+    background: #FCFDFF;
+    border: 1px solid #C0C9D7;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+}
+}
+  
+        

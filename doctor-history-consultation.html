@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/doctor-history-consultation/style.css">
+    <link rel="stylesheet" href="./css/profile/normilize.css">
+    <title>doctor-history-consultation</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+                <div class="header__row">
+                    <div class="header__logo">
+                        <div class="header-logo__img">
+                            <img src="./img/icons/header-icon.png" alt="image">
+                        </div>
+                        <div class="header-logo__content">
+                            <p>семейная медицина</p>
+                            <p>ДОКТОР РЯДОМ</p>
+                        </div>
+                    </div>
+                    <nav class="header__menu">
+                        <div class="header-menu__row">
+                            <ul class="header-menu__link">
+                                <div class="menu__rigt">
+                                <a href="./doctor-personal-data.html" class="header-menu__item">Личные данные</a>
+                                <a href="./doctor-calendar.html" class="header-menu__item">Календарь</a>
+                            </div>
+                                <div class="menu__left">
+                                <a href="#" class="header-menu__item--active">История консультаций⁤</a>
+                                <a href="./doctor-balance.html" class="header-menu__item">Баланс</a>
+                            </div>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="header__money">
+                        <div class="money__row">
+                            <a href="./doctor-balance.html" class="money__sum">₽ - <span>48 000</span></a>
+                            <a href="#" class="money__story">История транзакций</a>
+                            <a href="" class="requisites">Реквизиты</a>
+                        </div>
+                    </div>
+                    <div class="header__profile">
+                        <a href="./administrator-contact-details.html" class="header-profile__image">
+                            <img src="./img/icons/ава.png" alt="image">
+                        </a>
+                        <a href="./administrator-contact-details.html" class="header-profile__name">
+                            Dmitro Karimov
+                        </a>
+                        <a href="./administrator-contact-details.html" class="header-profile__login">
+                            <img src="./img/icons/SignOut.png" alt="image">
+                        </a>
+                    </div>
+                </div>
+        </header>
+        <main class="content">
+            <div class="doctor-history-consultation">
+                <div class="container">
+                    <div class="doctor-history-consultation__title">История консультаций</div>
+                    <form class="doctor-history-consultation__form">
+                        <input type="search" placeholder="Поиск по истории консультация">
+                        <button type="submit"></button>
+                      </form>
+                      <div class="doctor-history-consultation__list">
+                            <table class="calendar">
+                                <tr class="th-line">
+                                    <th class="border">
+                                        <select name="data">
+                                            <option>Дата:</option>
+                                        </select>
+                                    </th>
+                                    <th class="border">
+                                        <div class="time" href="#"><span>Время приема:</span></div>
+                                    </th>
+                                    <th class="border">
+                                        <select name="data" id="">
+                                            <option value="">ФИО:</option>
+                                        </select>
+                                    </th>
+                                    <th class="border">
+                                        <select name="data" id="">
+                                            <option value="">Статус:</option>
+                                        </select>
+                                    </th>
+                                    <th class="border">
+                                        <select name="data" id="">
+                                            <option value="">Метод консультации:</option>
+                                        </select>
+                                    </th>
+                                    <th class="border">
+                                        <select name="data" id="">
+                                            <option value="">Оплата:</option>
+                                        </select>
+                                    </th>
+                                    
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-gr"><a href="#">Выполнено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-red"><a href="#">Отказ </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                                <tr class="td-line">
+                                    <td class="сell"><a href="#">23.12.2021</a></td>
+                                    <td class="сell"><a href="#">10:20 - 10:40</a></td>
+                                    <td class="сell"><a href="#">Екатерина Сергеевна Павлова</a></td>
+                                    <td class="сell--active-blk"><a href="#">Отменено </a></td>
+                                    <td class="сell"><a href="#">Онлайн консультация</a></td>
+                                    <td class="сell"><a href="#">6 489 рублей</a></td>
+                                </tr>
+                            </table>
+                      </div>
+                </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__text">© 2021 Семейная медицина “Доктор рядом” . Все права защищены.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+.conect {
+    border: 3px solid #438ACA;
+    max-width: 1170px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin:0 auto 150px;
+}
+.conect__title {
+    padding-top: 94px;
+    margin-bottom: 39px;
+}
+.conect__btn {
+    width: 250px;
+    padding: 24px 0 19px;
+    margin:0 auto 73px ;
+    text-align: center;
+}
+.conect-btn__text {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;  
+    color: #FFFFFF;
+}
+
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .container{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .conect {
+        padding: 0 25px;
+        margin:0 auto 75px;
+
+    }
+    .conect__title {
+        padding-top: 64px;
+        margin-bottom: 19px;
+    }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+    .container{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .conect {
+        padding: 0 25px;
+        margin:0 auto 75px;
+    }
+    .conect__title {
+        padding-top: 64px;
+        margin-bottom: 19px;
+    }
+}

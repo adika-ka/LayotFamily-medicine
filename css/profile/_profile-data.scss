@@ -1,0 +1,311 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    }
+body{
+    font-weight: bold;
+    color: #1F2428;
+}
+input[type=file]{
+display: none;
+}
+.box__row{
+display: flex;
+}
+.sidebar {
+    padding-left: 100px ;
+    margin-right: 45px;
+}
+.sidebar__tittle {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 44px;
+    color: #1F2428;
+    margin-bottom: 30px;
+}
+.sidebar__input {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 270px;
+    background: #EAF2FF;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.input__file {
+display: block;
+width: 100px;
+height: 100px;
+border-color: springgreen;
+}
+.input__image {
+    padding-top: 77px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+.input__text {
+    text-align: center;
+    font-size: 15px;
+    line-height: 16px;
+}
+.content {
+}
+.container {
+    max-width: 820px;
+    margin: 0 auto;
+}
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1F2428;
+    margin-bottom: 10px;
+}
+.form {
+    & input, select{
+        background: #FCFDFF;
+        border: 1px solid #C0C9D7;
+        box-sizing: border-box;
+        border-radius: 6px;
+        width: 400px;
+        height: 60px;
+        margin-bottom: 20px;
+        padding: 22px 0 22px 20px;
+    }
+    & ::placeholder{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #222222;
+        opacity: 0.6;
+    }
+}
+.form__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.form__left {
+    flex: 0 0 47%; 
+    margin-right: 20px;
+}
+.form-left__row {
+    display: flex;
+    flex-direction: column;
+    & select{
+        appearance: none;
+    }
+        & .select{
+            background: url(/img/icons/arrow.svg) right no-repeat;
+            background-position-x: calc(100% - 15px);
+        }
+}
+.price-from-to__row{
+    display: flex;
+    align-items: center;
+    & input{
+            width: 190px;
+    }
+    & p{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #222222;
+        opacity: 0.6;
+        margin: 0 6px;
+    }
+}
+.form__right {
+    flex: 0 0 47%; 
+}
+.form-right__row{
+    display: flex;
+    flex-direction: column;
+    & .empty-block{
+        margin-bottom: 146px;
+    }
+}
+.form__about-me {
+    flex: 0 0 99%; 
+    margin-bottom: 20px;
+}
+.form-about-me__row {
+    & textarea{
+        background: #FCFDFF;
+        border: 1px solid #C0C9D7;
+        box-sizing: border-box;
+        border-radius: 6px;
+        width: 100%;
+        resize: none;
+        height: 100px;
+        padding: 22px 0 0 20px;
+    }
+}
+
+.form__documents {
+    flex: 0 0 99%; 
+    margin-bottom: 38px;
+}
+.form-documents__name {
+    margin-bottom: 14px;
+}
+.form-documents__row{
+    display: flex;
+}
+.form-documents__input {
+    display: flex;
+    flex-direction: column;
+    width: 61px;
+    height: 61px;
+    background: #FFFFFF;
+    border: 2px solid #C0C9D7;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+.input-document__file{
+    display: block;
+    width: 23px;
+    height: 23px;
+
+}
+.input-documents__image {
+    padding-top: 19px;
+    text-align: center;
+}
+
+.btn{
+    width: 200px;
+    padding: 19px 0;
+    text-align: center;
+    margin-bottom: 261px;
+    background: #00C879;
+    // box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
+    border-radius: 36px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border: solid 1px #00C879;
+}
+
+
+@media (min-width: 1228px) and (max-width: 1605px) {
+    .sidebar {
+        padding-left: 80px ;
+    }
+}
+@media (min-width: 1150px) and (max-width: 1227px) {
+    .sidebar {
+        padding-left: 20px ;
+        margin-right: 25px;
+    }
+}
+@media (min-width: 770px) and (max-width: 1150px) {
+    .sidebar {
+        padding-left: 20px ;
+        margin-right: 25px;
+    }
+    .content {
+    }
+    .container {
+        max-width: 820px;
+        margin: 0 auto;
+    }
+    .form {
+        & input, select{
+            // margin: 0 auto;
+            width: 450px;
+            height: 60px;
+            margin-bottom: 15px;
+            padding: 20px 0 20px 20px;
+        }
+    }
+    .form__row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .price-from-to__row{
+        & input{
+                width: 215px;
+        }
+    }
+    .form-right__row{
+        & .empty-block{
+            margin-bottom: 20px;
+        }
+    }
+    .form__about-me {
+        margin-bottom: 20px;
+    }
+    .form-about-me__row {
+        & textarea{
+            width: 96%;
+        }
+    }
+    
+    .form-documents__row{
+        flex-wrap: wrap;
+    }
+    .form-documents__input {
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 300px) and (max-width: 770px) {
+    .box__row{
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        margin: 0 auto;
+        }
+        .sidebar {
+            padding-left: 20px ;
+            margin-right: 25px;
+        }
+        .content {
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+        .form {
+            & input, select{
+                // margin: 0 auto;
+                width: 350px;
+                height: 50px;
+                margin-bottom: 15px;
+                padding: 20px 0 20px 20px;
+            }
+        }
+        .form__row {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .price-from-to__row{
+            & input{
+                    width: 165px;
+            }
+        }
+        .form-right__row{
+            & .empty-block{
+                margin-bottom: 20px;
+            }
+        }
+        .form__about-me {
+            margin-bottom: 20px;
+        }
+        .form-about-me__row {
+            & textarea{
+                width: 96%;
+            }
+        }
+        
+        .form-documents__row{
+            flex-wrap: wrap;
+        }
+        .form-documents__input {
+            margin-bottom: 10px;
+        }
+}

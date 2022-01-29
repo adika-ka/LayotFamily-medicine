@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/patient-specialty-doctor/style.css">
+    <link rel="stylesheet" href="./css/profile/normilize.css">
+    <title>patient-specialty-doctor</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+                <div class="header__row">
+                    <div class="header__logo">
+                        <div class="header-logo__img">
+                            <img src="./img/icons/header-icon.png" alt="image">
+                        </div>
+                        <div class="header-logo__content">
+                            <p>семейная медицина</p>
+                            <p>ДОКТОР РЯДОМ</p>
+                        </div>
+                    </div>
+                    <nav class="header__menu">
+                        <div class="header-menu__row">
+                            <ul class="header-menu__link">
+                                <div class="menu__rigt">
+                                <a href="./patient-personal-data.html" class="header-menu__item">Личные данные</a>
+                                <a href="#" class="header-menu__item--active">Специальность врача</a>
+                            </div>
+                                <div class="menu__left">
+                                <a href="./application-to-administration.html" class="header-menu__item">Отзывы⁤</a>
+                                <a href="./doctor-balance.html" class="header-menu__item">Баланс</a>
+                            </div>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="header__profile">
+                        <a href="./patient-personal-data.html" class="header-profile__image">
+                            <img src="./img/icons/ава.png" alt="image">
+                        </a>
+                        <a href="./patient-personal-data.html" class="header-profile__name">
+                            Dmitro Karimov
+                        </a>
+                        <a href="#" class="header-profile__login">
+                            <img src="./img/icons/SignOut.png" alt="image">
+                        </a>
+                    </div>
+                </div>
+        </header>
+        <main class="content">
+            <div class="patient-specialty-doctor">
+                <div class="container">
+                    <div class="patient-specialty-doctor__title">Выбор врача врача</div>
+                    <div class="patient-specialty-doctor__selection">
+                        <div class="selection__row">
+                            <div class="selection__online">
+                                <div class="online">Онлайн</div>
+                                <div class="home-visit name">Выезд на дом</div>
+                            </div>
+                            <div class="selection__speciality">
+                                <div class="speciality name">Специальность:</div>
+                                <select class="select" aria-placeholder="" name="speciality">
+                                    <option style='display:none;'>Неонатолог</option> 
+                                </select>
+                            </div>
+                            <div class="selection__sort">
+                                <div class="sort name">Сортировать:</div>
+                                <select class="select" aria-placeholder="" name="speciality">
+                                    <option>По популярности</option>
+                                </select>
+                            </div>
+                            <div class="selection__data">
+                                <div class="data name">Дата приема: </div>
+                                <select class="select" aria-placeholder="" name="speciality">
+                                    <option>Расписание на все дни</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="patient-specialty-doctor__items">
+                        <div class="patient-specialty-doctor__row">
+                            <div class="patient-specialty-doctor__item">
+                                <div class="item__row">
+                                    <div class="item__photo">
+                                        <div class="photo__row">
+                                            <img class="photo__img" src="./img/фото.png" alt="image">
+                                            <div class="photo__rating">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                            </div>
+                                            <div class="reviews">444 отзывов</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__name">
+                                        <div class="name__spec">Неонатолог</div>
+                                        <div class="name__nominal">Роман Нечитайло </div>
+                                        <div class="sum__row">
+                                            <div class="sum__left">
+                                                <div class="">Тип приёма:</div>
+                                                <div class="">Стоимость:</div>
+                                            </div>
+                                            <div class="sum__right">
+                                                <div class="">Онлайн</div>
+                                                <div class="">12 000 рублей</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__time">
+                                        <div class="time__row">
+                                            <div class="time__title">Выберите время приёма для записи онлайн</div>
+                                            <div class="time__day-of-week">
+                                                <div class="time-day-of-week__row">
+                                                    <div class="day-of-week--active">Вторник, 28</div>
+                                                    <div class="day-of-week">Среда, 29</div>
+                                                    <div class="day-of-week--actives">Четверг, 30</div>
+                                                </div>
+                                            </div>
+                                            <div class="time__table">
+                                                <div class="table__line">
+                                                    <div class="table__item">08:00</div>
+                                                    <div class="table__item">08:15</div>
+                                                    <div class="table__item">08:30</div>
+                                                    <div class="table__item">08:45</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">09:15</div>
+                                                    <div class="table__item">09:30</div>
+                                                    <div class="table__item">09:45</div>
+                                                    <div class="table__item">10:00</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">10:15</div>
+                                                    <div class="table__item">10:30</div>
+                                                    <div class="table__item">10:45</div>
+                                                    <div class="table__item">
+                                                        <img src="./img/icons/Vector-down.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="patient-specialty-doctor__item">
+                                <div class="item__row">
+                                    <div class="item__photo">
+                                        <div class="photo__row">
+                                            <img class="photo__img" src="./img/фото.png" alt="image">
+                                            <div class="photo__rating">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                            </div>
+                                            <div class="reviews">444 отзывов</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__name">
+                                        <div class="name__spec">Неонатолог</div>
+                                        <div class="name__nominal">Роман Нечитайло </div>
+                                        <div class="sum__row">
+                                            <div class="sum__left">
+                                                <div class="">Тип приёма:</div>
+                                                <div class="">Стоимость:</div>
+                                            </div>
+                                            <div class="sum__right">
+                                                <div class="">Онлайн</div>
+                                                <div class="">12 000 рублей</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__time">
+                                        <div class="time__row">
+                                            <div class="time__title">Выберите время приёма для записи онлайн</div>
+                                            <div class="time__day-of-week">
+                                                <div class="time-day-of-week__row">
+                                                    <div class="day-of-week--active">Вторник, 28</div>
+                                                    <div class="day-of-week">Среда, 29</div>
+                                                    <div class="day-of-week--actives">Четверг, 30</div>
+                                                </div>
+                                            </div>
+                                            <div class="time__table">
+                                                <div class="table__line">
+                                                    <div class="table__item">08:00</div>
+                                                    <div class="table__item">08:15</div>
+                                                    <div class="table__item">08:30</div>
+                                                    <div class="table__item">08:45</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">09:15</div>
+                                                    <div class="table__item">09:30</div>
+                                                    <div class="table__item">09:45</div>
+                                                    <div class="table__item">10:00</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">10:15</div>
+                                                    <div class="table__item">10:30</div>
+                                                    <div class="table__item">10:45</div>
+                                                    <div class="table__item">
+                                                        <img src="./img/icons/Vector-down.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="patient-specialty-doctor__item">
+                                <div class="item__row">
+                                    <div class="item__photo">
+                                        <div class="photo__row">
+                                            <img class="photo__img" src="./img/фото.png" alt="image">
+                                            <div class="photo__rating">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                            </div>
+                                            <div class="reviews">444 отзывов</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__name">
+                                        <div class="name__spec">Неонатолог</div>
+                                        <div class="name__nominal">Роман Нечитайло </div>
+                                        <div class="sum__row">
+                                            <div class="sum__left">
+                                                <div class="">Тип приёма:</div>
+                                                <div class="">Стоимость:</div>
+                                            </div>
+                                            <div class="sum__right">
+                                                <div class="">Онлайн</div>
+                                                <div class="">12 000 рублей</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__time">
+                                        <div class="time__row">
+                                            <div class="time__title">Выберите время приёма для записи онлайн</div>
+                                            <div class="time__day-of-week">
+                                                <div class="time-day-of-week__row">
+                                                    <div class="day-of-week--active">Вторник, 28</div>
+                                                    <div class="day-of-week">Среда, 29</div>
+                                                    <div class="day-of-week--actives">Четверг, 30</div>
+                                                </div>
+                                            </div>
+                                            <div class="time__table">
+                                                <div class="table__line">
+                                                    <div class="table__item">08:00</div>
+                                                    <div class="table__item">08:15</div>
+                                                    <div class="table__item">08:30</div>
+                                                    <div class="table__item">08:45</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">09:15</div>
+                                                    <div class="table__item">09:30</div>
+                                                    <div class="table__item">09:45</div>
+                                                    <div class="table__item">10:00</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">10:15</div>
+                                                    <div class="table__item">10:30</div>
+                                                    <div class="table__item">10:45</div>
+                                                    <div class="table__item">
+                                                        <img src="./img/icons/Vector-down.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="patient-specialty-doctor__item">
+                                <div class="item__row">
+                                    <div class="item__photo">
+                                        <div class="photo__row">
+                                            <img class="photo__img" src="./img/фото.png" alt="image">
+                                            <div class="photo__rating">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                            </div>
+                                            <div class="reviews">444 отзывов</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__name">
+                                        <div class="name__spec">Неонатолог</div>
+                                        <div class="name__nominal">Роман Нечитайло </div>
+                                        <div class="sum__row">
+                                            <div class="sum__left">
+                                                <div class="">Тип приёма:</div>
+                                                <div class="">Стоимость:</div>
+                                            </div>
+                                            <div class="sum__right">
+                                                <div class="">Онлайн</div>
+                                                <div class="">12 000 рублей</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__time">
+                                        <div class="time__row">
+                                            <div class="time__title">Выберите время приёма для записи онлайн</div>
+                                            <div class="time__day-of-week">
+                                                <div class="time-day-of-week__row">
+                                                    <div class="day-of-week--active">Вторник, 28</div>
+                                                    <div class="day-of-week">Среда, 29</div>
+                                                    <div class="day-of-week--actives">Четверг, 30</div>
+                                                </div>
+                                            </div>
+                                            <div class="time__table">
+                                                <div class="table__line">
+                                                    <div class="table__item">08:00</div>
+                                                    <div class="table__item">08:15</div>
+                                                    <div class="table__item">08:30</div>
+                                                    <div class="table__item">08:45</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">09:15</div>
+                                                    <div class="table__item">09:30</div>
+                                                    <div class="table__item">09:45</div>
+                                                    <div class="table__item">10:00</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">10:15</div>
+                                                    <div class="table__item">10:30</div>
+                                                    <div class="table__item">10:45</div>
+                                                    <div class="table__item">
+                                                        <img src="./img/icons/Vector-down.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="patient-specialty-doctor__item">
+                                <div class="item__row">
+                                    <div class="item__photo">
+                                        <div class="photo__row">
+                                            <img class="photo__img" src="./img/фото.png" alt="image">
+                                            <div class="photo__rating">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                            </div>
+                                            <div class="reviews">444 отзывов</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__name">
+                                        <div class="name__spec">Неонатолог</div>
+                                        <div class="name__nominal">Роман Нечитайло </div>
+                                        <div class="sum__row">
+                                            <div class="sum__left">
+                                                <div class="">Тип приёма:</div>
+                                                <div class="">Стоимость:</div>
+                                            </div>
+                                            <div class="sum__right">
+                                                <div class="">Онлайн</div>
+                                                <div class="">12 000 рублей</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__time">
+                                        <div class="time__row">
+                                            <div class="time__title">Выберите время приёма для записи онлайн</div>
+                                            <div class="time__day-of-week">
+                                                <div class="time-day-of-week__row">
+                                                    <div class="day-of-week--active">Вторник, 28</div>
+                                                    <div class="day-of-week">Среда, 29</div>
+                                                    <div class="day-of-week--actives">Четверг, 30</div>
+                                                </div>
+                                            </div>
+                                            <div class="time__table">
+                                                <div class="table__line">
+                                                    <div class="table__item">08:00</div>
+                                                    <div class="table__item">08:15</div>
+                                                    <div class="table__item">08:30</div>
+                                                    <div class="table__item">08:45</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">09:15</div>
+                                                    <div class="table__item">09:30</div>
+                                                    <div class="table__item">09:45</div>
+                                                    <div class="table__item">10:00</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">10:15</div>
+                                                    <div class="table__item">10:30</div>
+                                                    <div class="table__item">10:45</div>
+                                                    <div class="table__item">
+                                                        <img src="./img/icons/Vector-down.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="patient-specialty-doctor__item">
+                                <div class="item__row">
+                                    <div class="item__photo">
+                                        <div class="photo__row">
+                                            <img class="photo__img" src="./img/фото.png" alt="image">
+                                            <div class="photo__rating">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                            </div>
+                                            <div class="reviews">444 отзывов</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__name">
+                                        <div class="name__spec">Неонатолог</div>
+                                        <div class="name__nominal">Роман Нечитайло </div>
+                                        <div class="sum__row">
+                                            <div class="sum__left">
+                                                <div class="">Тип приёма:</div>
+                                                <div class="">Стоимость:</div>
+                                            </div>
+                                            <div class="sum__right">
+                                                <div class="">Онлайн</div>
+                                                <div class="">12 000 рублей</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__time">
+                                        <div class="time__row">
+                                            <div class="time__title">Выберите время приёма для записи онлайн</div>
+                                            <div class="time__day-of-week">
+                                                <div class="time-day-of-week__row">
+                                                    <div class="day-of-week--active">Вторник, 28</div>
+                                                    <div class="day-of-week">Среда, 29</div>
+                                                    <div class="day-of-week--actives">Четверг, 30</div>
+                                                </div>
+                                            </div>
+                                            <div class="time__table">
+                                                <div class="table__line">
+                                                    <div class="table__item">08:00</div>
+                                                    <div class="table__item">08:15</div>
+                                                    <div class="table__item">08:30</div>
+                                                    <div class="table__item">08:45</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">09:15</div>
+                                                    <div class="table__item">09:30</div>
+                                                    <div class="table__item">09:45</div>
+                                                    <div class="table__item">10:00</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">10:15</div>
+                                                    <div class="table__item">10:30</div>
+                                                    <div class="table__item">10:45</div>
+                                                    <div class="table__item">
+                                                        <img src="./img/icons/Vector-down.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="patient-specialty-doctor__item">
+                                <div class="item__row">
+                                    <div class="item__photo">
+                                        <div class="photo__row">
+                                            <img class="photo__img" src="./img/фото.png" alt="image">
+                                            <div class="photo__rating">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                            </div>
+                                            <div class="reviews">444 отзывов</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__name">
+                                        <div class="name__spec">Неонатолог</div>
+                                        <div class="name__nominal">Роман Нечитайло </div>
+                                        <div class="sum__row">
+                                            <div class="sum__left">
+                                                <div class="">Тип приёма:</div>
+                                                <div class="">Стоимость:</div>
+                                            </div>
+                                            <div class="sum__right">
+                                                <div class="">Онлайн</div>
+                                                <div class="">12 000 рублей</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__time">
+                                        <div class="time__row">
+                                            <div class="time__title">Выберите время приёма для записи онлайн</div>
+                                            <div class="time__day-of-week">
+                                                <div class="time-day-of-week__row">
+                                                    <div class="day-of-week--active">Вторник, 28</div>
+                                                    <div class="day-of-week">Среда, 29</div>
+                                                    <div class="day-of-week--actives">Четверг, 30</div>
+                                                </div>
+                                            </div>
+                                            <div class="time__table">
+                                                <div class="table__line">
+                                                    <div class="table__item">08:00</div>
+                                                    <div class="table__item">08:15</div>
+                                                    <div class="table__item">08:30</div>
+                                                    <div class="table__item">08:45</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">09:15</div>
+                                                    <div class="table__item">09:30</div>
+                                                    <div class="table__item">09:45</div>
+                                                    <div class="table__item">10:00</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">10:15</div>
+                                                    <div class="table__item">10:30</div>
+                                                    <div class="table__item">10:45</div>
+                                                    <div class="table__item">
+                                                        <img src="./img/icons/Vector-down.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="patient-specialty-doctor__item">
+                                <div class="item__row">
+                                    <div class="item__photo">
+                                        <div class="photo__row">
+                                            <img class="photo__img" src="./img/фото.png" alt="image">
+                                            <div class="photo__rating">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                            </div>
+                                            <div class="reviews">444 отзывов</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__name">
+                                        <div class="name__spec">Неонатолог</div>
+                                        <div class="name__nominal">Роман Нечитайло </div>
+                                        <div class="sum__row">
+                                            <div class="sum__left">
+                                                <div class="">Тип приёма:</div>
+                                                <div class="">Стоимость:</div>
+                                            </div>
+                                            <div class="sum__right">
+                                                <div class="">Онлайн</div>
+                                                <div class="">12 000 рублей</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__time">
+                                        <div class="time__row">
+                                            <div class="time__title">Выберите время приёма для записи онлайн</div>
+                                            <div class="time__day-of-week">
+                                                <div class="time-day-of-week__row">
+                                                    <div class="day-of-week--active">Вторник, 28</div>
+                                                    <div class="day-of-week">Среда, 29</div>
+                                                    <div class="day-of-week--actives">Четверг, 30</div>
+                                                </div>
+                                            </div>
+                                            <div class="time__table">
+                                                <div class="table__line">
+                                                    <div class="table__item">08:00</div>
+                                                    <div class="table__item">08:15</div>
+                                                    <div class="table__item">08:30</div>
+                                                    <div class="table__item">08:45</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">09:15</div>
+                                                    <div class="table__item">09:30</div>
+                                                    <div class="table__item">09:45</div>
+                                                    <div class="table__item">10:00</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">10:15</div>
+                                                    <div class="table__item">10:30</div>
+                                                    <div class="table__item">10:45</div>
+                                                    <div class="table__item">
+                                                        <img src="./img/icons/Vector-down.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="patient-specialty-doctor__item">
+                                <div class="item__row">
+                                    <div class="item__photo">
+                                        <div class="photo__row">
+                                            <img class="photo__img" src="./img/фото.png" alt="image">
+                                            <div class="photo__rating">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                            </div>
+                                            <div class="reviews">444 отзывов</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__name">
+                                        <div class="name__spec">Неонатолог</div>
+                                        <div class="name__nominal">Роман Нечитайло </div>
+                                        <div class="sum__row">
+                                            <div class="sum__left">
+                                                <div class="">Тип приёма:</div>
+                                                <div class="">Стоимость:</div>
+                                            </div>
+                                            <div class="sum__right">
+                                                <div class="">Онлайн</div>
+                                                <div class="">12 000 рублей</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__time">
+                                        <div class="time__row">
+                                            <div class="time__title">Выберите время приёма для записи онлайн</div>
+                                            <div class="time__day-of-week">
+                                                <div class="time-day-of-week__row">
+                                                    <div class="day-of-week--active">Вторник, 28</div>
+                                                    <div class="day-of-week">Среда, 29</div>
+                                                    <div class="day-of-week--actives">Четверг, 30</div>
+                                                </div>
+                                            </div>
+                                            <div class="time__table">
+                                                <div class="table__line">
+                                                    <div class="table__item">08:00</div>
+                                                    <div class="table__item">08:15</div>
+                                                    <div class="table__item">08:30</div>
+                                                    <div class="table__item">08:45</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">09:15</div>
+                                                    <div class="table__item">09:30</div>
+                                                    <div class="table__item">09:45</div>
+                                                    <div class="table__item">10:00</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">10:15</div>
+                                                    <div class="table__item">10:30</div>
+                                                    <div class="table__item">10:45</div>
+                                                    <div class="table__item">
+                                                        <img src="./img/icons/Vector-down.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="patient-specialty-doctor__item">
+                                <div class="item__row">
+                                    <div class="item__photo">
+                                        <div class="photo__row">
+                                            <img class="photo__img" src="./img/фото.png" alt="image">
+                                            <div class="photo__rating">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                                <img src="./img/icons/Star 5.svg" alt="image">
+                                            </div>
+                                            <div class="reviews">444 отзывов</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__name">
+                                        <div class="name__spec">Неонатолог</div>
+                                        <div class="name__nominal">Роман Нечитайло </div>
+                                        <div class="sum__row">
+                                            <div class="sum__left">
+                                                <div class="">Тип приёма:</div>
+                                                <div class="">Стоимость:</div>
+                                            </div>
+                                            <div class="sum__right">
+                                                <div class="">Онлайн</div>
+                                                <div class="">12 000 рублей</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__time">
+                                        <div class="time__row">
+                                            <div class="time__title">Выберите время приёма для записи онлайн</div>
+                                            <div class="time__day-of-week">
+                                                <div class="time-day-of-week__row">
+                                                    <div class="day-of-week--active">Вторник, 28</div>
+                                                    <div class="day-of-week">Среда, 29</div>
+                                                    <div class="day-of-week--actives">Четверг, 30</div>
+                                                </div>
+                                            </div>
+                                            <div class="time__table">
+                                                <div class="table__line">
+                                                    <div class="table__item">08:00</div>
+                                                    <div class="table__item">08:15</div>
+                                                    <div class="table__item">08:30</div>
+                                                    <div class="table__item">08:45</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">09:15</div>
+                                                    <div class="table__item">09:30</div>
+                                                    <div class="table__item">09:45</div>
+                                                    <div class="table__item">10:00</div>
+                                                </div>
+                                                <div class="table__line">
+                                                    <div class="table__item">10:15</div>
+                                                    <div class="table__item">10:30</div>
+                                                    <div class="table__item">10:45</div>
+                                                    <div class="table__item">
+                                                        <img src="./img/icons/Vector-down.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="patient-specialty-doctor__pages">
+                        <div class="patient-specialty-doctor__pages__row">
+                            <a class="arrow__left" href="#"></a>
+                            <a href="#">1</a>
+                            <a class="active" href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">...</a>
+                            <a href="#">20</a>
+                            <a href="#">21</a>
+                            <a href="#">22</a>
+                            <a class="arrow__right" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                            <!-- <div class="doctor-calendar__active">
+                                            <div class="doctor-calendar__image">
+                                            <img src="./img/icons/курсор 2.svg" alt="#">
+                                            </div>
+                                            <form class="doctor-calendar__form">
+                                            <div class="doctor-calendar-form__title">Опишите жалобу:</div>
+                                            <div class="doctor-calendar-form__row">
+                                            <label>
+                                            <textarea name="report"></textarea>
+                                            </label>
+                                            </div>
+                                            <button class="btn" type="submit"><span class="btn__text">Записаться</span></button>
+                                            </form>
+                                            </div> -->
+<!-- <div class="doctor-calendar__active">
+<div class="doctor-calendar__image">
+<img src="./img/icons/Закрыть.svg" alt="#">
+</div>
+<form class="doctor-calendar__form">
+<div class="doctor-calendar-form__image">
+<img src="./img/icons/Vector 94.svg" alt="image">
+</div>
+<div class="doctor-calendar-form__title">Спасибо за заявку!</div>
+<div class="doctor-calendar-form__subtitle">Если в течении 15 минут с Вами не связались, Вы <br> можете позвонить по номеру <span>+7 495 123 45 67</span></div>
+</form>
+</div> -->
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__text">© 2021 Семейная медицина “Доктор рядом” . Все права защищены.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/balance/style.css">
+    <link rel="stylesheet" href="./css/profile/normilize.css">
+    <title>balance</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+                <div class="header__row">
+                    <div class="header__logo">
+                        <div class="header-logo__img">
+                            <img src="./img/icons/header-icon.png" alt="image">
+                        </div>
+                        <div class="header-logo__content">
+                            <p>семейная медицина</p>
+                            <p>ДОКТОР РЯДОМ</p>
+                        </div>
+                    </div>
+                    <nav class="header__menu">
+                        <div class="header-menu__row">
+                            <ul class="header-menu__link">
+                                <div class="menu__rigt">
+                                <a href="./patient-personal-data.html" class="header-menu__item">Личные данные</a>
+                                <a href="./doctor-calendar.html" class="header-menu__item">Календарь</a>
+                            </div>
+                                <div class="menu__left">
+                                <a href="./doctor-history-consultation.html" class="header-menu__item">История консультаций⁤</a>
+                                <a href="#" class="header-menu__item--active">Баланс</a>
+                            </div>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="header__money">
+                        <div class="money__row">
+                            <a href="#" class="money__sum">₽ - <span>48 000</span></a>
+                            <a href="#" class="money__story">История транзакций</a>
+                            <a href="" class="requisites">Реквизиты</a>
+                        </div>
+                    </div>
+                    <div class="header__profile">
+                        <a href="./administrator-contact-details.html" class="header-profile__image">
+                            <img src="./img/icons/ава.png" alt="image">
+                        </a>
+                        <a href="./administrator-contact-details.html" class="header-profile__name">
+                            Dmitro Karimov
+                        </a>
+                        <a href="./administrator-contact-details.html" class="header-profile__login">
+                            <img src="./img/icons/SignOut.png" alt="image">
+                        </a>
+                    </div>
+                </div>
+        </header>
+<!-- <header class="header">
+<div class="header__row">
+<div class="header__logo">
+<div class="header-logo__img">
+<img src="./img/icons/header-icon.png" alt="image">
+</div>
+<div class="header-logo__content">
+<p>семейная медицина</p>
+<p>ДОКТОР РЯДОМ</p>
+</div>
+</div>
+<nav class="header__menu">
+<div class="header-menu__row">
+<ul class="header-menu__link">
+<div class="menu__rigt">
+<a href="#" class="header-menu__item">Личные данные</a>
+<a href="#" class="header-menu__item">Специальность врача</a>
+</div>
+<div class="menu__left">
+<a href="#" class="header-menu__item">Отзывы⁤</a>
+<a href="#" class="header-menu__item--active">Баланс</a>
+</ul>
+</div>
+</nav>
+<div class="header__profile">
+<a href="#" class="header-profile__image">
+<img src="./img/icons/ава.png" alt="image">
+</a>
+<a href="#" class="header-profile__name">
+Dmitro Karimov
+</a>
+<a href="#" class="header-profile__login">
+<img src="./img/icons/SignOut.png" alt="image">
+</a>
+</div>
+</div>
+</header> -->
+        <main class="content">
+            <div class="balance">
+                <div class="container">
+                    <div class="balance__title">Ваш баланс: <span class="sum">398 756</span> рублей</div>
+                    <div class="balance__subtitle">Хотите вывести деньги:</div>
+                    <!-- <div class="balance__subtitle">Хотите пополнить баланс:</div> -->
+                    <div class="balance__method">Метод вывода:</div>
+                    <!-- <div class="balance__method">Метод пополнения:</div> -->
+                    <div class="balance__banks">
+                        <a class="check" href="#">
+                            <img src="./img/icons/Visa.png" alt="image">
+                            <img src="./img/icons/галочка.png" alt="img">
+                        </a>
+                        <a href="#">
+                            <img src="./img/icons/MasterCard.png" alt="image">
+                        </a>
+                        <a href="#">
+                            <img src="./img/icons/WebMoney.png" alt="image">
+                        </a>
+                        <a href="#">
+                            <img src="./img/icons/Qiwi.png" alt="image">
+                        </a>
+                    </div>
+                        <div class="balance__card">
+                            <div class="balance__card__row">
+                            <div class="balance__number">Номер карты:</div>
+                            <input class="number__card" placeholder="XXXX-XXXX-XXXX-XXXX" type="number">
+                            <!-- <input class="number__data" placeholder="ДД/ГГ" type="number">
+                            <input class="number__cvv" placeholder="CVV" type="number"> -->
+                        </div>
+                            <div class="balance__sum">Сумма</div>
+                            <input class="balance__summa" placeholder="XX XXX рублей" type="text">
+                        </div>
+                    <button class="btn" type="submit"><span class="btn__text">Вывести</span></button>
+                    <!-- <button class="btn" type="submit"><span class="btn__text">Пополнить</span></button> -->
+                    <!-- <div class="rules">
+                        Нажимая на кнопку вы соглашаетесь с <a href="#">правилами <br> предоставления услуг</a> и <a href="#">политикой конфиденциальности</a>
+                    </div> -->
+                </div>
+            </div>
+        </main>
+<!-- <div class="doctor-calendar__active">
+<div class="doctor-calendar__image">
+<img src="./img/icons/Закрыть.svg" alt="#">
+</div>
+<form class="doctor-calendar__form">
+<div class="doctor-calendar-form__image">
+<img src="./img/icons/Vector 94.svg" alt="image">
+</div>
+<div class="doctor-calendar-form__title">Спасибо за заявку!</div>
+<div class="doctor-calendar-form__subtitle">Если в течении 15 минут с Вами не связались, Вы <br> можете позвонить по номеру <span>+7 495 123 45 67</span></div>
+</form>
+</div> -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__text">© 2021 Семейная медицина “Доктор рядом” . Все права защищены.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
